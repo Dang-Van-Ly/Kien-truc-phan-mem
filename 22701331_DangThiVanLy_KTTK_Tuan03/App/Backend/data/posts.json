@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Hệ thống Plugin CMS",
+    "content": "Bài viết đầu tiên",
+    "author": "AA"
+  },
+  {
+    "id": 1773386667993,
+    "title": "aaaaa",
+    "content": "aaaaaaaaaaaaaaaaa",
+    "author": "aaa",
+    "createdAt": "14:24:27 13/3/2026"
+  },
+  {
+    "id": 1773386715641,
+    "title": "bbbbbbbbbbbb",
+    "content": "bbbbbbbbbbbbbb",
+    "author": "bbbbbbbbbbbbbbb",
+    "createdAt": "14:25:15 13/3/2026"
+  }
+]

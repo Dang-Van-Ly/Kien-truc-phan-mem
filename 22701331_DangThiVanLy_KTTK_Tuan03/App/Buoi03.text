@@ -1,0 +1,24 @@
+Layer architecture:
+    Ưu điểm:
+    - Dễ phát triển, tách biệt rạch ròi giữa giao diện và dữ liệu. Phổ biến, dễ tìm tài liệu.
+    Nhược điểm:
+    - Dễ bị hiện tượng "lớp rỗng" (sinkhole) khi dữ liệu chỉ đi qua mà không xử lý gì.
+    Khả năng bảo trì:
+    - Cao, vì sửa lớp này ít ảnh hưởng trực tiếp đến lớp kia.
+Microkernel Architecture:
+    Ưu điểm:
+    - Cực kỳ linh hoạt. Cho phép mở rộng tính năng (plugin) mà không cần sửa code lõi.
+    Nhược điểm:
+    - Khó thiết kế phần Core ban đầu sao cho đủ tổng quát để nhận mọi loại plugin.
+    Khả năng bảo trì:
+    - Rất cao cho các tính năng mở rộng, nhưng khó bảo trì nếu Core bị lỗi.
+
+
+
+
+Lựa chọn Style thích hợp nhất cho CMS của bạn:
+    Lựa chọn: Microkernel Architecture.
+    Đối với một hệ thống CMS (Hệ quản trị nội dung), nhu cầu của người dùng là vô tận: người muốn đếm chữ, người muốn kiểm tra chính tả, người muốn tự động chèn quảng cáo.
+        - Tính tùy biến: Microkernel cho phép chúng ta thêm các tính năng này dưới dạng "Plugin" mà không làm code của server.js trở nên rác và rối rắm.
+        - Sự độc lập: Nếu một Plugin (ví dụ wordCount) bị lỗi, Core System vẫn có thể chạy bình thường và bỏ qua nó, giúp hệ thống hoạt động ổn định.
+        - Dễ nâng cấp: Bạn có thể gửi file plugin cho người dùng khác cài đặt chỉ bằng cách copy vào thư mục plugins/, đúng chất một CMS hiện đại.
