@@ -1,0 +1,10 @@
+{
+  "name": "person-2-user-service",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "install:all": "npm install --prefix user-service",
+    "dev": "npm run dev --prefix user-service",
+    "test": "npm run test --prefix user-service"
+  }
+}

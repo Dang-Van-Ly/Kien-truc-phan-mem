@@ -1,0 +1,10 @@
+{
+  "name": "person-4-booking-service",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "install:all": "npm install --prefix booking-service",
+    "dev": "npm run dev --prefix booking-service",
+    "test": "npm run test --prefix booking-service"
+  }
+}

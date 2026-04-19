@@ -1,0 +1,13 @@
+{
+  "name": "person-5-payment-notification",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "install:all": "npm install --prefix payment-service && npm install --prefix notification-service",
+    "dev": "concurrently -n payment,notification -c yellow,green \"npm run dev --prefix payment-service\" \"npm run dev --prefix notification-service\"",
+    "test": "npm run test --prefix payment-service && npm run test --prefix notification-service"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}

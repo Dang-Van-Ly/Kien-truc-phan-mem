@@ -1,0 +1,10 @@
+{
+  "name": "person-3-movie-service",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "install:all": "npm install --prefix movie-service",
+    "dev": "npm run dev --prefix movie-service",
+    "test": "npm run test --prefix movie-service"
+  }
+}

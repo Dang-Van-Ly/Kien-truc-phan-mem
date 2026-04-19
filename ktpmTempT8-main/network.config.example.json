@@ -1,0 +1,24 @@
+{
+  "ips": {
+    "gateway": "192.168.1.10",
+    "frontend": "192.168.1.10",
+    "user": "192.168.1.11",
+    "movie": "192.168.1.12",
+    "booking": "192.168.1.13",
+    "payment": "192.168.1.14",
+    "broker": "192.168.1.100"
+  },
+  "ports": {
+    "gateway": 8080,
+    "frontend": 8085,
+    "user": 8081,
+    "movie": 8082,
+    "booking": 8083,
+    "payment": 8084,
+    "broker": 5672
+  },
+  "broker": {
+    "username": "guest",
+    "password": "guest"
+  }
+}
